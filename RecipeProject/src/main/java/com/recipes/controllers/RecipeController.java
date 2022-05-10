@@ -94,22 +94,5 @@ public class RecipeController {
 		}
 	}
 
-	@GetMapping("/{recipeId}")
-	public ResponseEntity<?> getRecipe(@PathVariable("recipeId") int recipeId) throws RecipeNotFoundException {
-
-		Optional<Recipe> opt = recipeRepository.findById(recipeId);
-
-		if (opt.isPresent()) {
-
-			return new ResponseEntity<>( recipeService.getRecipe(recipeId), HttpStatus.OK);
-
-		}
-
-		else {
-
-			throw new RecipeNotFoundException(" Recipe id : " + recipeId + " is not found ");
-		}
-
-	}
 
 }

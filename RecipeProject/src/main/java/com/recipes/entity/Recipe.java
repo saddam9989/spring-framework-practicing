@@ -1,6 +1,4 @@
 
-
-
 package com.recipes.entity;
 
 
@@ -24,8 +22,6 @@ import javax.persistence.Table;
 import org.springframework.format.annotation.DateTimeFormat;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
-
-
 
 
 @Entity
@@ -52,6 +48,7 @@ public class Recipe {
 
 	@Column
 	private String instructions;
+	
 	
 	@OneToMany(targetEntity = Ingredients.class, cascade=CascadeType.ALL)
 	@JoinColumn(name="RI_fk",referencedColumnName = "recipeId")

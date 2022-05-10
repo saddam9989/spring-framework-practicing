@@ -19,8 +19,6 @@ public class Item {
 	
 	@Column
 	private String item_name;
-	
-
 
 
 	public Item(String item_name) {

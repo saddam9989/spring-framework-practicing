@@ -7,6 +7,8 @@ public class RecipeNotFoundException extends Exception{
 		super(message);
 		
 	}
+
+	
 	
 	
 

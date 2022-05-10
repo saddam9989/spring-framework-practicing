@@ -29,12 +29,12 @@ public class Ingredients {
 	}
 
 
-	public Ingredients(String ingredientsList) {
-		super();
-		this.ingredientsList = ingredientsList;
-		
-	}
 
+	public Ingredients(int id, String ingredientsList) {
+		super();
+		this.id = id;
+		this.ingredientsList = ingredientsList;
+	}
 
 
 
@@ -42,16 +42,29 @@ public class Ingredients {
 		return id;
 	}
 
+
+
 	public void setId(int id) {
 		this.id = id;
 	}
+
+
 
 	public String getIngredientsList() {
 		return ingredientsList;
 	}
 
+
+
 	public void setIngredientsList(String ingredientsList) {
 		this.ingredientsList = ingredientsList;
 	}
+
+
+
+
+
+
+	
 	
 }
